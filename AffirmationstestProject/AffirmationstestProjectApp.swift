@@ -11,7 +11,14 @@ import SwiftUI
 struct AffirmationstestProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let settingsService = SettingsService()
+            let userSettings = settingsService.loadSettings()
+            
+            if userSettings.isOnboardingCompleted {
+                MainView()
+            } else {
+                OnboardingView(viewModel: OnboardingViewModel())
+            }
         }
     }
 }
