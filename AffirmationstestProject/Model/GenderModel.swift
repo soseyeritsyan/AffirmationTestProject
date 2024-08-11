@@ -7,7 +7,12 @@
 
 import Foundation
 
+enum GenderTypes: String, Codable {
+    case Male
+    case Female
+}
+
 struct GenderModel: Identifiable, Codable, Equatable {
     let id: UUID
-    let gender: String
+    let genderType: GenderTypes
 }

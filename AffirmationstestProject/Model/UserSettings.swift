@@ -7,7 +7,7 @@
 
 struct UserSettings: Codable {
     var isOnboardingCompleted: Bool
-    var selectedCategory: String
-    var selectedBackgroundColor: String
-    var selectedGender: String
+    var selectedCategory: CategoryTypes?
+    var selectedBackgroundColor: ColorTypes?
+    var selectedGender: GenderTypes?
 }

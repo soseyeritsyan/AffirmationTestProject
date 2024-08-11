@@ -13,9 +13,9 @@ struct MainView: View {
     
     var body: some View {
         TabView(selection: $currentIndex) {
-            ForEach(viewModel.affirmations.indices, id: \.self) { index in
+            ForEach(viewModel.selectedAffirmations.indices, id: \.self) { index in
                 VStack {
-                    Text(viewModel.affirmations[index].text)
+                    Text(viewModel.selectedAffirmations[index].textEng)
                         .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding()

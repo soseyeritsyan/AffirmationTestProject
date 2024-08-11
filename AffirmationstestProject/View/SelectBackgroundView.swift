@@ -12,12 +12,12 @@ struct SelectBackgroundView: View {
     
     var body: some View {
         VStack {
-            Text("Выберите цвет фона")
+            Text("Select background color")
             List(viewModel.backgroundColors) { color in
                 Button(action: {
                     viewModel.selectedBackgroundColor = color
                 }) {
-                    Text(color.colorName)
+                    Text(String(localized: LocalizedStringResource(stringLiteral: color.colorType.rawValue)))
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(Color.white)

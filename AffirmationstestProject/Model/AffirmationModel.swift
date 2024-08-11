@@ -9,5 +9,6 @@ import Foundation
 
 struct Affirmation: Identifiable {
     let id = UUID()
-    let text: String
+    let textEng: String
+    let textRus: String
 }

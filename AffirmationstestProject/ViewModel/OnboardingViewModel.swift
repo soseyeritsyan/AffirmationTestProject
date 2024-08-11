@@ -35,31 +35,31 @@ class OnboardingViewModel: ObservableObject {
     
     func loadCategories() {
         categories = [
-            CategoryModel(id: UUID(), name: "Любовь"),
-            CategoryModel(id: UUID(), name: "Дружба")
+            CategoryModel(id: UUID(), categoryType: .Love),
+            CategoryModel(id: UUID(), categoryType: .Friendship)
         ]
     }
     
     func loadBackgroundColors() {
         backgroundColors = [
-            BackgroundColorModel(id: UUID(), colorName: "Синий"),
-            BackgroundColorModel(id: UUID(), colorName: "Красный")
+            BackgroundColorModel(id: UUID(), colorType: .Blue),
+            BackgroundColorModel(id: UUID(), colorType: .Red)
         ]
     }
     
     func loadGenders() {
         genders = [
-            GenderModel(id: UUID(), gender: "Мужчина"),
-            GenderModel(id: UUID(), gender: "Женщина")
+            GenderModel(id: UUID(), genderType: .Male),
+            GenderModel(id: UUID(), genderType: .Female)
         ]
     }
     
     func completeOnboarding() {
         var settings = settingsService.loadSettings()
         settings.isOnboardingCompleted = true
-        settings.selectedCategory = selectedCategory?.name ?? ""
-        settings.selectedBackgroundColor = selectedBackgroundColor?.colorName ?? ""
-        settings.selectedGender = selectedGender?.gender ?? ""
+        settings.selectedCategory = selectedCategory?.categoryType ?? .Friendship//.rawValue ?? ""
+        settings.selectedBackgroundColor = selectedBackgroundColor?.colorType ?? .Blue//.rawValue ?? ""
+        settings.selectedGender = selectedGender?.genderType ?? .Female//.rawValue ?? ""
         settingsService.saveSettings(settings)
         isCompleted = true
     }

@@ -14,6 +14,7 @@
 		F5BEA7762C64AD5000F65A35 /* AffirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */; };
 		F5BEA7782C64AD7100F65A35 /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */; };
 		F5C2A5AA2C6486CE003D78BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A5A92C6486CE003D78BB /* MainView.swift */; };
+		F5CD2FFB2C68A4FD00FD3A9E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5CD2FFA2C68A4FD00FD3A9E /* Localizable.xcstrings */; };
 		F5FFB4E72C628EA300AF96BE /* AffirmationstestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFB4E62C628EA300AF96BE /* AffirmationstestProjectApp.swift */; };
 		F5FFB4E92C628EA300AF96BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFB4E82C628EA300AF96BE /* ContentView.swift */; };
 		F5FFB4EB2C628EA400AF96BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FFB4EA2C628EA400AF96BE /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationViewModel.swift; sourceTree = "<group>"; };
 		F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationModel.swift; sourceTree = "<group>"; };
 		F5C2A5A92C6486CE003D78BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F5CD2FFA2C68A4FD00FD3A9E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F5FFB4E32C628EA300AF96BE /* AffirmationstestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmationstestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FFB4E62C628EA300AF96BE /* AffirmationstestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationstestProjectApp.swift; sourceTree = "<group>"; };
 		F5FFB4E82C628EA300AF96BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		F5FFB4DA2C628EA300AF96BE = {
 			isa = PBXGroup;
 			children = (
+				F5CD2FFA2C68A4FD00FD3A9E /* Localizable.xcstrings */,
 				F5FFB4E52C628EA300AF96BE /* AffirmationstestProject */,
 				F5FFB4E42C628EA300AF96BE /* Products */,
 			);
@@ -172,6 +175,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F5FFB4DA2C628EA300AF96BE;
 			productRefGroup = F5FFB4E42C628EA300AF96BE /* Products */;
@@ -190,6 +194,7 @@
 			files = (
 				F5FFB4EE2C628EA400AF96BE /* Preview Assets.xcassets in Resources */,
 				F5FFB4EB2C628EA400AF96BE /* Assets.xcassets in Resources */,
+				F5CD2FFB2C68A4FD00FD3A9E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

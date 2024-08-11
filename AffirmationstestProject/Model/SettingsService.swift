@@ -15,7 +15,8 @@ class SettingsService {
            let settings = try? JSONDecoder().decode(UserSettings.self, from: data) {
             return settings
         }
-        return UserSettings(isOnboardingCompleted: false, selectedCategory: "", selectedBackgroundColor: "", selectedGender: "")
+        return UserSettings(isOnboardingCompleted: false, selectedCategory: .none ,
+                            selectedBackgroundColor: .none, selectedGender: .none)
     }
     
     func saveSettings(_ settings: UserSettings) {

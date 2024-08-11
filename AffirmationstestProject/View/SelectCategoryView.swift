@@ -12,12 +12,12 @@ struct SelectCategoryView: View {
     
     var body: some View {
         VStack {
-            Text("Выберите категорию")
+            Text("Select category")
             List(viewModel.categories) { category in
                 Button(action: {
                     viewModel.selectedCategory = category
                 }) {
-                    Text(category.name)
+                    Text(String(localized: LocalizedStringResource(stringLiteral: category.categoryType.rawValue)))
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(Color.white)

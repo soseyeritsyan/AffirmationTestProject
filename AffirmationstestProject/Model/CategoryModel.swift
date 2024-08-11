@@ -7,7 +7,12 @@
 
 import Foundation
 
+enum CategoryTypes: String, Codable {
+    case Friendship
+    case Love
+}
+
 struct CategoryModel: Identifiable, Codable, Equatable {
     let id: UUID
-    let name: String
+    let categoryType: CategoryTypes
 }

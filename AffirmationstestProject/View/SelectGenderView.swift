@@ -12,12 +12,12 @@ struct SelectGenderView: View {
     
     var body: some View {
         VStack {
-            Text("Выберите хвет фона")
+            Text("Select gender")
             List(viewModel.genders) { gender in
                 Button(action: {
                     viewModel.selectedGender = gender
                 }) {
-                    Text(gender.gender)
+                    Text(String(localized: LocalizedStringResource(stringLiteral: gender.genderType.rawValue)))
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(Color.white)
