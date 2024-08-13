@@ -21,6 +21,19 @@ class OnboardingViewModel: ObservableObject {
 
     private let settingsService = SettingsService()
     
+    var isSelectionMade: Bool {
+        switch currentScreenIndex {
+        case 0:
+            return selectedCategory != nil
+        case 1:
+            return selectedBackgroundColor != nil
+        case 2:
+            return selectedGender != nil
+        default:
+            return false
+        }
+    }
+    
     init() {
         loadCategories()
         loadBackgroundColors()

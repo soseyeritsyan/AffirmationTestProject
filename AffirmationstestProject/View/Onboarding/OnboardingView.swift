@@ -29,10 +29,12 @@ struct OnboardingView: View {
             }) {
                 Text(viewModel.currentScreenIndex < 2 ? "Next" : "Finish")
                     .padding()
-                    .background(Color.blue)
+                    .background(viewModel.isSelectionMade ? Color.blue : Color.gray)
+
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+                .disabled(!viewModel.isSelectionMade)
                 .padding(),
             alignment: .bottom
         )
