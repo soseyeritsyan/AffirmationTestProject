@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-enum ColorTypes: String, Codable {
+enum ColorTypes: String, Codable, CaseIterable {
     case Blue
     case Red
 }
 
-struct BackgroundColorModel: Identifiable, Codable, Equatable {
+struct BackgroundColorModel: Identifiable, Codable, Equatable, Hashable{
     let id: UUID
     let colorType: ColorTypes
 

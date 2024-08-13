@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Background color" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Задний фон"
+          }
+        }
+      }
+    },
     "Blue" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +18,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Синий"
+          }
+        }
+      }
+    },
+    "Category" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Категория"
+          }
+        }
+      }
+    },
+    "Changes saved successfully" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменения успешно сохранены"
           }
         }
       }
@@ -44,6 +74,16 @@
         }
       }
     },
+    "Gender" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пол"
+          }
+        }
+      }
+    },
     "Love" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -76,6 +116,16 @@
         }
       }
     },
+    "OK" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        }
+      }
+    },
     "Red" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -83,6 +133,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Красный"
+          }
+        }
+      }
+    },
+    "Save changes" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить изменения"
           }
         }
       }
@@ -113,6 +173,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите гендер"
+          }
+        }
+      }
+    },
+    "Select language" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите язык"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         }
       }

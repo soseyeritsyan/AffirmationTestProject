@@ -11,6 +11,8 @@
 		F5AF35992C63654A0063C2A5 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF35982C63654A0063C2A5 /* CategoryModel.swift */; };
 		F5AF359B2C6367870063C2A5 /* SelectGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF359A2C6367870063C2A5 /* SelectGenderView.swift */; };
 		F5AF359F2C63685A0063C2A5 /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF359E2C63685A0063C2A5 /* GenderModel.swift */; };
+		F5B024D52C6907A7003E63C6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B024D42C6907A7003E63C6 /* SettingsView.swift */; };
+		F5BB908D2C69CBDD00BFEB47 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB908C2C69CBDD00BFEB47 /* SettingsViewModel.swift */; };
 		F5BEA7762C64AD5000F65A35 /* AffirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */; };
 		F5BEA7782C64AD7100F65A35 /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */; };
 		F5C2A5AA2C6486CE003D78BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A5A92C6486CE003D78BB /* MainView.swift */; };
@@ -32,6 +34,8 @@
 		F5AF35982C63654A0063C2A5 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		F5AF359A2C6367870063C2A5 /* SelectGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderView.swift; sourceTree = "<group>"; };
 		F5AF359E2C63685A0063C2A5 /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		F5B024D42C6907A7003E63C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F5BB908C2C69CBDD00BFEB47 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationViewModel.swift; sourceTree = "<group>"; };
 		F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationModel.swift; sourceTree = "<group>"; };
 		F5C2A5A92C6486CE003D78BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			children = (
 				F5FFB4F82C629D4F00AF96BE /* OnboardingViewModel.swift */,
 				F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */,
+				F5BB908C2C69CBDD00BFEB47 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				F5FFB4FE2C62AA9200AF96BE /* SelectBackgroundView.swift */,
 				F5AF359A2C6367870063C2A5 /* SelectGenderView.swift */,
 				F5C2A5A92C6486CE003D78BB /* MainView.swift */,
+				F5B024D42C6907A7003E63C6 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,7 +219,9 @@
 				F5AF35992C63654A0063C2A5 /* CategoryModel.swift in Sources */,
 				F5FFB4FD2C62A0DD00AF96BE /* SelectCategoryView.swift in Sources */,
 				F5FFB4E92C628EA300AF96BE /* ContentView.swift in Sources */,
+				F5BB908D2C69CBDD00BFEB47 /* SettingsViewModel.swift in Sources */,
 				F5AF359F2C63685A0063C2A5 /* GenderModel.swift in Sources */,
+				F5B024D52C6907A7003E63C6 /* SettingsView.swift in Sources */,
 				F5FFB4FB2C62A07900AF96BE /* OnboardingView.swift in Sources */,
 				F5AF35972C6365130063C2A5 /* BackgroundColorModel.swift in Sources */,
 				F5AF359B2C6367870063C2A5 /* SelectGenderView.swift in Sources */,

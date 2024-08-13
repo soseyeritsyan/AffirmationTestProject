@@ -34,24 +34,15 @@ class OnboardingViewModel: ObservableObject {
     }
     
     func loadCategories() {
-        categories = [
-            CategoryModel(id: UUID(), categoryType: .Love),
-            CategoryModel(id: UUID(), categoryType: .Friendship)
-        ]
+        categories = CategoryTypes.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
     }
     
     func loadBackgroundColors() {
-        backgroundColors = [
-            BackgroundColorModel(id: UUID(), colorType: .Blue),
-            BackgroundColorModel(id: UUID(), colorType: .Red)
-        ]
+        backgroundColors = ColorTypes.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
     }
     
     func loadGenders() {
-        genders = [
-            GenderModel(id: UUID(), genderType: .Male),
-            GenderModel(id: UUID(), genderType: .Female)
-        ]
+        genders = GenderTypes.allCases.map { GenderModel(id: UUID(), genderType: $0) }
     }
     
     func completeOnboarding() {

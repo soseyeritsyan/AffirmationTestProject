@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum GenderTypes: String, Codable {
+enum GenderTypes: String, Codable, CaseIterable {
     case Male
     case Female
 }
 
-struct GenderModel: Identifiable, Codable, Equatable {
+struct GenderModel: Identifiable, Codable, Equatable, Hashable {
     let id: UUID
     let genderType: GenderTypes
 }
