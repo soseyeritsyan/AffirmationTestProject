@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-enum ColorTypes: String, Codable, CaseIterable {
-    case Blue
-    case Red
+enum ColorType: String, Codable, CaseIterable {
+    case blue
+    case red
 }
 
 struct BackgroundColorModel: Identifiable, Codable, Equatable, Hashable{
     let id: UUID
-    let colorType: ColorTypes
+    let colorType: ColorType
 
     var color: Color {
         switch colorType {
-        case .Blue:
+        case .blue:
             return .blue
-        case .Red:
+        case .red:
             return .red
         }
     }

@@ -8,9 +8,9 @@
 import SwiftUI
 
 class SettingsViewModel: ObservableObject {
-    @Published var selectedCategory: CategoryTypes
-    @Published var selectedBackgroundColor: ColorTypes
-    @Published var selectedGender: GenderTypes
+    @Published var selectedCategory: CategoryType
+    @Published var selectedBackgroundColor: ColorType
+    @Published var selectedGender: GenderType
     
     @Published var categories: [CategoryModel] = []
     @Published var backgroundColors: [BackgroundColorModel] = []
@@ -21,9 +21,9 @@ class SettingsViewModel: ObservableObject {
     init() {
         let settingsService = SettingsService()
         self.userSettings = settingsService.loadSettings()
-        self.selectedGender = userSettings.selectedGender ?? .Female
-        self.selectedBackgroundColor = userSettings.selectedBackgroundColor ?? .Blue
-        self.selectedCategory = userSettings.selectedCategory ?? .Friendship
+        self.selectedGender = userSettings.selectedGender ?? .female
+        self.selectedBackgroundColor = userSettings.selectedBackgroundColor ?? .blue
+        self.selectedCategory = userSettings.selectedCategory ?? .friendship
         
         loadCategories()
         loadBackgroundColors()
@@ -31,15 +31,15 @@ class SettingsViewModel: ObservableObject {
     }
     
     private func loadCategories() {
-        categories = CategoryTypes.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
+        categories = CategoryType.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
     }
     
     private func loadBackgroundColors() {
-        backgroundColors = ColorTypes.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
+        backgroundColors = ColorType.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
     }
     
     private func loadGenders() {
-        genders = GenderTypes.allCases.map { GenderModel(id: UUID(), genderType: $0) }
+        genders = GenderType.allCases.map { GenderModel(id: UUID(), genderType: $0) }
     }
     
     func saveSettings() {

@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum CategoryTypes: String, Codable, CaseIterable {
-    case Friendship
-    case Love
+enum CategoryType: String, Codable, CaseIterable {
+    case friendship
+    case love
 }
 
 struct CategoryModel: Identifiable, Codable, Equatable, Hashable {
     let id: UUID
-    let categoryType: CategoryTypes
+    let categoryType: CategoryType
 }

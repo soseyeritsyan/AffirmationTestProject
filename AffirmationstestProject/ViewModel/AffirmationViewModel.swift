@@ -73,20 +73,20 @@ class AffirmationViewModel: ObservableObject {
         }
     }
     
-    func getColor(from color: ColorTypes) -> Color {
+    func getColor(from color: ColorType) -> Color {
         switch color {
-        case .Blue:
+        case .blue:
             return .blue
-        case .Red:
+        case .red:
             return .red
         }
     }
     
-    private func loadAffirmations(for category: CategoryTypes) {
+    private func loadAffirmations(for category: CategoryType) {
         switch category {
-        case .Friendship:
+        case .friendship:
             selectedAffirmations = friendshipAffirmations
-        case .Love:
+        case .love:
             selectedAffirmations = loveAffirmations
         }
     }

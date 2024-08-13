@@ -34,23 +34,23 @@ class OnboardingViewModel: ObservableObject {
     }
     
     func loadCategories() {
-        categories = CategoryTypes.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
+        categories = CategoryType.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
     }
     
     func loadBackgroundColors() {
-        backgroundColors = ColorTypes.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
+        backgroundColors = ColorType.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
     }
     
     func loadGenders() {
-        genders = GenderTypes.allCases.map { GenderModel(id: UUID(), genderType: $0) }
+        genders = GenderType.allCases.map { GenderModel(id: UUID(), genderType: $0) }
     }
     
     func completeOnboarding() {
         var settings = settingsService.loadSettings()
         settings.isOnboardingCompleted = true
-        settings.selectedCategory = selectedCategory?.categoryType ?? .Friendship//.rawValue ?? ""
-        settings.selectedBackgroundColor = selectedBackgroundColor?.colorType ?? .Blue//.rawValue ?? ""
-        settings.selectedGender = selectedGender?.genderType ?? .Female//.rawValue ?? ""
+        settings.selectedCategory = selectedCategory?.categoryType ?? .friendship//.rawValue ?? ""
+        settings.selectedBackgroundColor = selectedBackgroundColor?.colorType ?? .blue//.rawValue ?? ""
+        settings.selectedGender = selectedGender?.genderType ?? .female//.rawValue ?? ""
         settingsService.saveSettings(settings)
         isCompleted = true
     }

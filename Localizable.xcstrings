@@ -11,12 +11,18 @@
         }
       }
     },
-    "Blue" : {
+    "blue" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Blue"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Синий"
           }
         }
@@ -42,12 +48,18 @@
         }
       }
     },
-    "Female" : {
+    "female" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Female"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Женщина"
           }
         }
@@ -63,12 +75,18 @@
         }
       }
     },
-    "Friendship" : {
+    "friendship" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Friendship"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Дружба"
           }
         }
@@ -84,23 +102,35 @@
         }
       }
     },
-    "Love" : {
+    "love" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Love"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Любовь"
           }
         }
       }
     },
-    "Male" : {
+    "male" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Male"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Мужчина"
           }
         }
@@ -126,12 +156,18 @@
         }
       }
     },
-    "Red" : {
+    "red" : {
       "extractionState" : "manual",
       "localizations" : {
-        "ru" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Red"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Красный"
           }
         }
