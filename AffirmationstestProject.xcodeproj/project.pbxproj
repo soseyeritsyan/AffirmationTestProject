@@ -15,10 +15,9 @@
 		F5BB908D2C69CBDD00BFEB47 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB908C2C69CBDD00BFEB47 /* SettingsViewModel.swift */; };
 		F5BEA7762C64AD5000F65A35 /* AffirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */; };
 		F5BEA7782C64AD7100F65A35 /* AffirmationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */; };
-		F5C2A5AA2C6486CE003D78BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A5A92C6486CE003D78BB /* MainView.swift */; };
+		F5C2A5AA2C6486CE003D78BB /* AffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2A5A92C6486CE003D78BB /* AffirmationView.swift */; };
 		F5CD2FFB2C68A4FD00FD3A9E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F5CD2FFA2C68A4FD00FD3A9E /* Localizable.xcstrings */; };
 		F5FFB4E72C628EA300AF96BE /* AffirmationstestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFB4E62C628EA300AF96BE /* AffirmationstestProjectApp.swift */; };
-		F5FFB4E92C628EA300AF96BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFB4E82C628EA300AF96BE /* ContentView.swift */; };
 		F5FFB4EB2C628EA400AF96BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FFB4EA2C628EA400AF96BE /* Assets.xcassets */; };
 		F5FFB4EE2C628EA400AF96BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FFB4ED2C628EA400AF96BE /* Preview Assets.xcassets */; };
 		F5FFB4F52C629CC600AF96BE /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFB4F42C629CC600AF96BE /* SettingsService.swift */; };
@@ -38,11 +37,10 @@
 		F5BB908C2C69CBDD00BFEB47 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F5BEA7752C64AD5000F65A35 /* AffirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationViewModel.swift; sourceTree = "<group>"; };
 		F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationModel.swift; sourceTree = "<group>"; };
-		F5C2A5A92C6486CE003D78BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F5C2A5A92C6486CE003D78BB /* AffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationView.swift; sourceTree = "<group>"; };
 		F5CD2FFA2C68A4FD00FD3A9E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F5FFB4E32C628EA300AF96BE /* AffirmationstestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmationstestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FFB4E62C628EA300AF96BE /* AffirmationstestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationstestProjectApp.swift; sourceTree = "<group>"; };
-		F5FFB4E82C628EA300AF96BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5FFB4EA2C628EA400AF96BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5FFB4ED2C628EA400AF96BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5FFB4F42C629CC600AF96BE /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
@@ -64,12 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F590F2062C6B1D91008E029B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F5FFB4FA2C62A07900AF96BE /* OnboardingView.swift */,
+				F5FFB4FC2C62A0DD00AF96BE /* SelectCategoryView.swift */,
+				F5FFB4FE2C62AA9200AF96BE /* SelectBackgroundView.swift */,
+				F5AF359A2C6367870063C2A5 /* SelectGenderView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		F5AF359C2C63682F0063C2A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F5FFB4F42C629CC600AF96BE /* SettingsService.swift */,
-				F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */,
 				F5FFB4F62C629D0E00AF96BE /* UserSettings.swift */,
+				F5BEA7772C64AD7100F65A35 /* AffirmationModel.swift */,
 				F5AF35962C6365130063C2A5 /* BackgroundColorModel.swift */,
 				F5AF35982C63654A0063C2A5 /* CategoryModel.swift */,
 				F5AF359E2C63685A0063C2A5 /* GenderModel.swift */,
@@ -90,12 +98,8 @@
 		F5C2A5A82C648444003D78BB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F5FFB4E82C628EA300AF96BE /* ContentView.swift */,
-				F5FFB4FA2C62A07900AF96BE /* OnboardingView.swift */,
-				F5FFB4FC2C62A0DD00AF96BE /* SelectCategoryView.swift */,
-				F5FFB4FE2C62AA9200AF96BE /* SelectBackgroundView.swift */,
-				F5AF359A2C6367870063C2A5 /* SelectGenderView.swift */,
-				F5C2A5A92C6486CE003D78BB /* MainView.swift */,
+				F590F2062C6B1D91008E029B /* Onboarding */,
+				F5C2A5A92C6486CE003D78BB /* AffirmationView.swift */,
 				F5B024D42C6907A7003E63C6 /* SettingsView.swift */,
 			);
 			path = View;
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F5FFB4E62C628EA300AF96BE /* AffirmationstestProjectApp.swift */,
+				F5FFB4F42C629CC600AF96BE /* SettingsService.swift */,
 				F5AF359C2C63682F0063C2A5 /* Model */,
 				F5AF359D2C6368380063C2A5 /* ViewModel */,
 				F5C2A5A82C648444003D78BB /* View */,
@@ -213,12 +218,11 @@
 			files = (
 				F5FFB4F92C629D4F00AF96BE /* OnboardingViewModel.swift in Sources */,
 				F5BEA7762C64AD5000F65A35 /* AffirmationViewModel.swift in Sources */,
-				F5C2A5AA2C6486CE003D78BB /* MainView.swift in Sources */,
+				F5C2A5AA2C6486CE003D78BB /* AffirmationView.swift in Sources */,
 				F5FFB4FF2C62AA9200AF96BE /* SelectBackgroundView.swift in Sources */,
 				F5FFB4F52C629CC600AF96BE /* SettingsService.swift in Sources */,
 				F5AF35992C63654A0063C2A5 /* CategoryModel.swift in Sources */,
 				F5FFB4FD2C62A0DD00AF96BE /* SelectCategoryView.swift in Sources */,
-				F5FFB4E92C628EA300AF96BE /* ContentView.swift in Sources */,
 				F5BB908D2C69CBDD00BFEB47 /* SettingsViewModel.swift in Sources */,
 				F5AF359F2C63685A0063C2A5 /* GenderModel.swift in Sources */,
 				F5B024D52C6907A7003E63C6 /* SettingsView.swift in Sources */,

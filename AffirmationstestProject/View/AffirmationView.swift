@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct AffirmationView: View {
     @StateObject var viewModel = AffirmationViewModel()
     @State private var currentIndex = 0
     
@@ -17,13 +17,14 @@ struct MainView: View {
             TabView(selection: $currentIndex) {
                 ForEach(viewModel.selectedAffirmations.indices, id: \.self) { index in
                     VStack {
-                        Text(viewModel.selectedAffirmations[index].textEng)
-                            .font(.largeTitle)
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color.clear)
-                            .rotationEffect(.degrees(-90))
+                        Text(currentLanguage == "en" ? viewModel.selectedAffirmations[index].textEng : viewModel.selectedAffirmations[index].textRus
+                        )
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.clear)
+                        .rotationEffect(.degrees(-90))
                     }
                     .tag(index)
                 }
@@ -32,10 +33,12 @@ struct MainView: View {
             .rotationEffect(.degrees(90))
             .background(viewModel.backgroundColor)
             .ignoresSafeArea()
-            
             .navigationBarItems(trailing: settingsButton)
+            .onAppear {
+                currentIndex = 0
+                viewModel.loadSettings()
+            }
         }
-        
     }
     
     var settingsButton: some View {
@@ -44,10 +47,14 @@ struct MainView: View {
                 .imageScale(.large)
                 .padding()
         }
-        .tint(.white)
+        .tint(.gray)
+    } 
+    
+    var currentLanguage: String {
+        Locale.current.language.languageCode?.identifier ?? "en"
     }
-}            
+}
 
 #Preview {
-    MainView()
+    AffirmationView()
 }

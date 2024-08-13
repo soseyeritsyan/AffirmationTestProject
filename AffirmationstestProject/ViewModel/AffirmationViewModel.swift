@@ -63,7 +63,7 @@ class AffirmationViewModel: ObservableObject {
         loadSettings()
     }
     
-    private func loadSettings() {
+    func loadSettings() {
         let settings = settingsService.loadSettings()
         if let color = settings.selectedBackgroundColor {
             backgroundColor = getColor(from: color)
@@ -83,6 +83,11 @@ class AffirmationViewModel: ObservableObject {
     }
     
     private func loadAffirmations(for category: CategoryTypes) {
-        selectedAffirmations = loveAffirmations
+        switch category {
+        case .Friendship:
+            selectedAffirmations = friendshipAffirmations
+        case .Love:
+            selectedAffirmations = loveAffirmations
+        }
     }
 }

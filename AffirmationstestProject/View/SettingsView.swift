@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @ObservedObject var viewModel: SettingsViewModel
+    @StateObject var viewModel: SettingsViewModel
     @State private var showAlert = false
     
     var body: some View {
@@ -19,7 +19,7 @@ struct SettingsView: View {
                            selection: $viewModel.selectedCategory,
                            content: {
                         ForEach(viewModel.categories, id: \.self) {
-                            Text($0.categoryType.rawValue).tag($0.categoryType)
+                            Text(String(localized: LocalizedStringResource(stringLiteral: $0.categoryType.rawValue))).tag($0.categoryType)
                         }
                     })
                     
@@ -27,7 +27,7 @@ struct SettingsView: View {
                            selection: $viewModel.selectedBackgroundColor,
                            content: {
                         ForEach(viewModel.backgroundColors, id: \.self) {
-                            Text($0.colorType.rawValue).tag($0.colorType)
+                            Text(String(localized: LocalizedStringResource(stringLiteral: $0.colorType.rawValue))).tag($0.colorType)
                         }
                     })
                     
@@ -35,7 +35,7 @@ struct SettingsView: View {
                            selection: $viewModel.selectedGender,
                            content: {
                         ForEach(viewModel.genders, id: \.self) {
-                            Text($0.genderType.rawValue).tag($0.genderType)
+                            Text(String(localized: LocalizedStringResource(stringLiteral: $0.genderType.rawValue))).tag($0.genderType)
                         }
                     })
                 }

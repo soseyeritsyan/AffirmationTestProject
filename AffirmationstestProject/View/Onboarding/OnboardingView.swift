@@ -37,7 +37,7 @@ struct OnboardingView: View {
             alignment: .bottom
         )
         .fullScreenCover(isPresented: $showMainView) {
-            MainView()
+            AffirmationView()
         }
     }
     

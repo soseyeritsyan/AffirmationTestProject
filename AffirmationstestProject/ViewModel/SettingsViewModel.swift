@@ -30,15 +30,15 @@ class SettingsViewModel: ObservableObject {
         loadGenders()
     }
     
-    func loadCategories() {
+    private func loadCategories() {
         categories = CategoryTypes.allCases.map { CategoryModel(id: UUID(), categoryType: $0) }
     }
     
-    func loadBackgroundColors() {
+    private func loadBackgroundColors() {
         backgroundColors = ColorTypes.allCases.map { BackgroundColorModel(id: UUID(), colorType: $0) }
     }
     
-    func loadGenders() {
+    private func loadGenders() {
         genders = GenderTypes.allCases.map { GenderModel(id: UUID(), genderType: $0) }
     }
     

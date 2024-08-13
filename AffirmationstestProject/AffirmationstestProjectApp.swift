@@ -15,7 +15,7 @@ struct AffirmationstestProjectApp: App {
             let userSettings = settingsService.loadSettings()
             
             if userSettings.isOnboardingCompleted {
-                MainView()
+                AffirmationView()
             } else {
                 OnboardingView(viewModel: OnboardingViewModel())
             }
